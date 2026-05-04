@@ -1,4 +1,5 @@
 class Pokemon {
+  final int id;
   final String name;
   final List<String> types;
   final String description;
@@ -11,6 +12,7 @@ class Pokemon {
   final List<String> partners;
 
   const Pokemon({
+    required this.id,
     required this.name,
     required this.types,
     required this.description,
@@ -27,4 +29,7 @@ class Pokemon {
     required this.roles,
     required this.partners,
   });
+
+  @override
+  String toString() => name;
 }

@@ -48,13 +48,15 @@ class PokemonDetailScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const SizedBox(height: 60),
-                        Image.asset(
-                          pokemon.imagePath,
-                          height: 160,
-                          errorBuilder: (_, __, ___) => Icon(
-                            Icons.catching_pokemon,
-                            size: 120,
-                            color: color,
+                        Center(
+                          child: Image.asset(
+                            pokemon.imagePath,
+                            height: 160,
+                            errorBuilder: (_, __, ___) => Icon(
+                              Icons.catching_pokemon,
+                              size: 120,
+                              color: color,
+                            ),
                           ),
                         ),
                         const SizedBox(height: 8),
@@ -98,7 +100,7 @@ class PokemonDetailScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '#${pokemon.toString().padLeft(2, '0')}',
+                  '#${pokemon.id.toString().padLeft(3, '0')}',
                   style: TextStyle(
                     color: color,
                     fontSize: 12,
@@ -116,7 +118,6 @@ class PokemonDetailScreen extends StatelessWidget {
               ],
             ),
           ),
-
           SliverPadding(
             padding: const EdgeInsets.all(16),
             sliver: SliverList(
@@ -134,7 +135,6 @@ class PokemonDetailScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-
                 _card(
                   color: color,
                   title: 'Base Stats',
@@ -150,7 +150,6 @@ class PokemonDetailScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-
                 _card(
                   color: color,
                   title: 'Info',
@@ -163,7 +162,6 @@ class PokemonDetailScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-
                 _card(
                   color: color,
                   title: 'Role',
@@ -202,7 +200,6 @@ class PokemonDetailScreen extends StatelessWidget {
                         .toList(),
                   ),
                 ),
-
                 _card(
                   color: color,
                   title: 'Partner Cocok',
@@ -239,7 +236,6 @@ class PokemonDetailScreen extends StatelessWidget {
                         .toList(),
                   ),
                 ),
-
                 const SizedBox(height: 16),
               ]),
             ),
