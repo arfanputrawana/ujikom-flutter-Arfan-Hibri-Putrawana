@@ -1,6 +1,6 @@
-# ujikom_flutter
+# PokemonBase App By Arfan Hibri Putrawana
 
-A new Flutter project.
+A new Flutter project
 
 ## Getting Started
 
