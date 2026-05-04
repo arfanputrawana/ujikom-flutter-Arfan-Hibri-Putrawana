@@ -1,7 +1,6 @@
 # PokemonBase App By Arfan Hibri Putrawana
 
-A new Flutter project
-
+PokemonBase adalah aplikasi mobile yang dibangun menggunakan Flutter. Menampilkan informasi lengkap setiap Pokémon mulai dari stats, tipe, ability, kelemahan, role dalam battle, hingga rekomendasi partner terbaik. Dilengkapi fitur pencarian real-time dan tampilan UI dark mode yang modern.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
